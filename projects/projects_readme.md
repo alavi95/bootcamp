@@ -1,1 +1,1 @@
-This folder will be used for all of our projects - including prompts and files.
+This folder will be used for all of our projects - including prompts and files
