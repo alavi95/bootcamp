@@ -1,11 +1,4 @@
 colorama==0.4.4
-multiprocess==0.70.12.2
 numpy==1.20.1
-openpyxl==3.0.7
 pandas==1.2.4
-psycopg2-binary==2.9.1
-requests==2.25.1
-swifter==1.1.2
 termcolor==1.1.0
-urllib3==1.26.4
-xlrd==2.0.1
