@@ -1,0 +1,5 @@
+ticker,name,homepage_url,phone_number,address,total_employees,market_cap,currency_name
+AAPL,Apple Inc.,https://www.apple.com,(408) 996-1010, ONE APPLE PARK WAY CUPERTINO CA 95014,164000,2400663866580.0,usd
+AMZN,Amazon.Com Inc,https://www.amazon.com,(206) 266-1000, 410 TERRY AVENUE NORTH SEATTLE WA 98109,1541000,1047065001970.26,usd
+TSLA,"Tesla, Inc. Common Stock",https://www.tesla.com,650-681-5000, 3500 DEER CREEK RD PALO ALTO CA 94304,127855,616240642046.76,usd
+GOOGL,Alphabet Inc. Class A Common Stock,https://www.abc.xyz,650-253-0000, 1600 AMPHITHEATRE PARKWAY MOUNTAIN VIEW CA 94043,190234,1317840300000.0,usd
