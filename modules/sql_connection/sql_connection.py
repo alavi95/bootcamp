@@ -44,3 +44,12 @@ def convert_q_to_list(query):
     for row in result:
         l.append(row[0])
     return l
+
+
+def df_to_sql(df, table_name):
+    df.to_sql(table_name, get_connection(), schema="public", if_exists="replace", index=False, chunksize=5000, method="multi")
+
+
+def sql_to_df(query):
+    df = pd.read_sql(query, get_connection()) 
+    return df

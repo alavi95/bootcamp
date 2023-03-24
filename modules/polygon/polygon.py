@@ -48,7 +48,12 @@ def get_price_data(ticker, date):
 def get_company_data_df(tickers):
     ticker_data = []
     for ticker in tickers:
-        ticker_data.append(get_stock_data(ticker.upper()))
+        try:
+            r = get_stock_data(ticker.upper())
+            r["status"] = "success"
+            ticker_data.append(copy.deepcopy(r))
+        except:
+            ticker_data.append({"ticker" : ticker, "status" : "failed"})
     return pd.DataFrame(ticker_data)
 
 
