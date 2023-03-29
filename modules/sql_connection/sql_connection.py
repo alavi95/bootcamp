@@ -1,12 +1,10 @@
 import os
+import sys
+sys.path.append(os.path.realpath(__file__).split("bootcamp")[0]+"bootcamp")
+
+from lib.helper import *
 from sqlalchemy import create_engine
 import pandas as pd
-
-
-sql_endpoint = os.environ.get("SQL_ENDPOINT")
-sql_pw = os.environ.get("SQL_PW")
-sql_user = os.environ.get("SQL_USER")
-sql_db = os.environ.get("SQL_DB")
 
 
 def get_sql_engine():
@@ -47,7 +45,7 @@ def convert_q_to_list(query):
 
 
 def df_to_sql(df, table_name):
-    df.to_sql(table_name, get_connection(), schema="public", if_exists="replace", index=False, chunksize=5000, method="multi")
+    df.to_sql(table_name, get_connection(), schema="public", if_exists="append", index=False, chunksize=5000, method="multi")
 
 
 def sql_to_df(query):

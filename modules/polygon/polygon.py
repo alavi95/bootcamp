@@ -1,10 +1,13 @@
+import os
+import sys
+sys.path.append(os.path.realpath(__file__).split("bootcamp")[0]+"bootcamp")
+
+from lib.helper import *
 import requests
 import os
 import json
 import copy
 import pandas as pd
-
-polygon_key = os.environ.get("POLYGON_KEY")
 
 
 def get_stock_data(ticker):

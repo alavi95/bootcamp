@@ -1,0 +1,1 @@
+SELECT ticker FROM tickers ORDER BY RANDOM() LIMIT 1000;
